@@ -4,7 +4,7 @@
 
 Esse challenge do Front-End Mentor é voltado para o treinamento de Tecnologias, como _HTML_ e _CSS_, onde foi utilizado Display Grid, Display Flex, Positions, Variáveis Css e Media Queries para um design mais responsivo.
 
-Poderá visualizar nesse <a target="_blank" href="https://thejrodrigues.github.io/fylo-landing-page-with-two-column-layout-master/">LINK</a>
+Poderá visualizar nesse <a target="_blank" href="https://thejrodrigues.github.io/social-proof-section-master/">LINK</a>
 <br></br>
 <br></br>
 
