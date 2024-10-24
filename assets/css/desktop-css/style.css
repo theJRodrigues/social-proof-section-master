@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+:root {
+  /*Primary*/
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+
+  /*Neutral*/
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(../../images/bg-pattern-top-desktop.svg) top left,
+    url(../../images/bg-pattern-bottom-desktop.svg) bottom right;
+  background-repeat: no-repeat;
+  background-size: 40% 50%, 70% 90%;
+  background-color: white;
+  padding: 2rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 5rem;
+  max-width: 100rem;
+  gap: 5rem;
+}
+
+.text-section h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--Very-Dark-Magenta);
+  margin-bottom: 2rem;
+}
+.text-section p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--Very-Dark-Magenta);
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+.rating-box {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 2.5rem;
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 1rem;
+  width: 90%;
+}
+.rating-box:nth-child(1) {
+  position: relative;
+  left: -5%;
+}
+.rating-box:nth-child(3) {
+  position: relative;
+  left: 5%;
+}
+.rating-box ul {
+  display: flex;
+  gap: 0.5rem;
+}
+.rating-box ul li {
+  list-style: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../../images/icon-star.svg);
+  background-position: center;
+  background-repeat: none;
+  background-size: contain;
+}
+.rating-box span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--Very-Dark-Magenta);
+}
+.comment-section {
+  grid-column: 1 / span 2;
+  display: flex;
+  gap: 2rem;
+}
+.comment-box {
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 1rem;
+  padding: 4rem 3rem;
+}
+.comment-box .perfil img {
+  width: 3.5rem;
+  border-radius: 50%;
+}
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.perfil-name h4,
+p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--Light-Grayish-Magenta);
+}
+
+.perfil-name p {
+  color: var(--Soft-Pink);
+}
+
+.comment-box:nth-child(1) {
+  position: relative;
+  top: -1.5rem;
+}
+.comment-box:nth-child(3) {
+  position: relative;
+  top: 1.5rem;
+}
+
+.attribution {
+  position:absolute;
+  bottom: 0;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--Soft-Pink);
+}
